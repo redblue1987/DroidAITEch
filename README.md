@@ -47,7 +47,7 @@ $ git clone https://github.com/DroidAITech/ROS-Academy-for-Beginners.git
 2. 安装教学包所需的依赖
 ```sh
 $ cd ~/catkin_ws
-$ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
+$ rosdep install --from-paths src --ignore-src --rosdistro=melodic -y
 ```
 
 3. 编译并刷新环境
