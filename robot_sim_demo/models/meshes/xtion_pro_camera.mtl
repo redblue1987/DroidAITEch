@@ -1,0 +1,9 @@
+newmtl xtionFBXASC045proFBXASC045cameraSG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.89 0.89 0.89
+Tf 1.00 1.00 1.00
+map_Kd xtion_pro_camera.jpg
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns -2.00
