@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
-<sdf version="1.5">
+<sdf version="1.4">
   <model name="ISCAS_groundplane">
     <static>true</static>
     <link name="link">
       <collision name="collision">
-        <geometry>  
+        <geometry>
           <plane>
             <normal>0 0 1</normal>
             <size>30 30</size>

@@ -1,0 +1,24 @@
+newmtl group_pasted__nurbsToPoly438SG
+illum 4
+Kd 0.71 0.71 0.71
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.06 0.06
+Ns 48.00
+newmtl group_pasted__nurbsToPoly443SG
+illum 4
+Kd 0.06 0.06 0.06
+Ka 0.20 0.20 0.20
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 48.00
+newmtl group_pasted__nurbsToPoly465SG
+illum 4
+Kd 0.15 0.15 0.15
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.06 0.06
+Ns 48.00

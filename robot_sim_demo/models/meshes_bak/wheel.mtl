@@ -1,0 +1,25 @@
+newmtl pasted__polySurface1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd wheel.jpg
+Ni 1.00
+Ks 0.16 0.16 0.16
+Ns 48.00
+newmtl pasted__polySurface5SG
+illum 4
+Kd 0.05 0.05 0.05
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.22 0.22 0.22
+Ns -1.00
+newmtl pasted__polySurface7SG
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.80 0.80 0.80
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.66 0.66 0.66
+Ns 48.00

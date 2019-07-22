@@ -1,9 +1,9 @@
 <launch>
 
   <arg name="x" default="5.0" />
-  <arg name="y" default=".0" />
+  <arg name="y" default="1.0" />
   <arg name="z" default="0.0" />
-  <arg name="yaw" default="-2.0" />
+  <arg name="yaw" default="3.1415926" />
 
   <!-- Setup controllers -->
   <!-- rosparam file="$(find fetch_gazebo)/param/freight_controllers.yaml" command="load" / -->

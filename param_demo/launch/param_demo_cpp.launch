@@ -5,7 +5,9 @@
 	<!--param name="table_description" command="$(find xacro)/xacro.py $(find gazebo_worlds)/objects/table.urdf.xacro" /-->
 
 	<!--rosparam参数配置-->
-	<rosparam>   
+	<rosparam>
+	    	param1: 1
+	  	  param2: 2
         param3: 3
         param4: 4
         param5: 5
@@ -14,6 +16,6 @@
 	<!--rosparam file="$(find robot_sim_demo)/config/xbot-u_control.yaml" command="load" /-->
 	<node pkg="param_demo" type="param_demo" name="param_demo" output="screen" />
 
-	
+
 
 </launch>
