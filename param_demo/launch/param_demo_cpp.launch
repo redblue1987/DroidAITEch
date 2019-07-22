@@ -6,8 +6,6 @@
 
 	<!--rosparam参数配置-->
 	<rosparam>
-	    	param1: 1
-	  	  param2: 2
         param3: 3
         param4: 4
         param5: 5
