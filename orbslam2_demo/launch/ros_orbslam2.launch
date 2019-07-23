@@ -3,5 +3,5 @@
     <arg name="PATH_TO_SETTINGS_FILE" value="$(find orbslam2_demo)/param/Zdzn.yaml "/>
     
     <node name="RGBD" pkg="ORB_SLAM2" type="RGBD" args="$(arg PATH_TO_VOCABULARY) $(arg PATH_TO_SETTINGS_FILE)"/>
-   	 <remap from="/camera/depth_registered/image_raw" to="/camera/depth/image_raw"/>
+   	
 </launch>
