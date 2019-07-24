@@ -1,7 +1,0 @@
-<launch>
-  <include file="$(find slam_sim_demo)/launch/include/robot_hector.launch.xml"/>
-
-  <!-- Move base -->
- <include file="$(find navigation_sim_demo)/launch/include/move_base.launch.xml"/>
-
-</launch>
