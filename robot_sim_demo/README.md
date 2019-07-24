@@ -21,7 +21,7 @@ $ rosrun robot_sim_demo robot_keyboard_teleop.py
 ```
 
 ## 注意事项
-确认升级Gazebo到**7.0及以上版本**
+确认升级Gazebo到**9.0**以上
 
 查看Gazebo版本方法：
 
@@ -29,11 +29,11 @@ $ rosrun robot_sim_demo robot_keyboard_teleop.py
 $ gazebo -v
 ```
 
-如果版本低于7.0，请升级Gazebo：
+如果版本低于9.10，请升级Gazebo：
 
 ```sh
 $ sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
 $ wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
 $ sudo apt-get update
-$ sudo apt-get install gazebo7
+$ sudo apt-get install gazebo9
 ```
