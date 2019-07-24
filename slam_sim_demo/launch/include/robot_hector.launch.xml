@@ -31,6 +31,8 @@
     <param name="ymin" value="-25.0"/>
     <param name="xmax" value="25.0"/>
     <param name="ymax" value="25.0"/>
+    <param name="map_start_x" value="0.5"/>
+    <param name="map_start_y" value="0.5"/>
 
     <param name="delta" value="0.05"/>
     <param name="llsamplerange" value="0.01"/>
