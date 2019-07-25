@@ -1,3 +1,0 @@
-/home/chuanxu/opencv-3.2.0/test/CMakeFiles/edit_cache.dir
-/home/chuanxu/opencv-3.2.0/test/CMakeFiles/rebuild_cache.dir
-/home/chuanxu/opencv-3.2.0/test/CMakeFiles/DisplayImage.dir

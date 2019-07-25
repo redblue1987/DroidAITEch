@@ -1,0 +1,5 @@
+/home/pxx/Downloads/clion-2019.1.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/pxx/ros_class/src/ROS-Academy-for-Beginners-melodic/orbslam2_demo/openCV 3.2测试用文件/test"
+-- Found OpenCV: /usr (found version "3.2.0") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pxx/ros_class/src/ROS-Academy-for-Beginners-melodic/orbslam2_demo/openCV 3.2测试用文件/test/cmake-build-debug
