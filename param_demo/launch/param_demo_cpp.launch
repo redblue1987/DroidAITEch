@@ -2,6 +2,7 @@
 	<!--param参数配置-->
 	<param name="param1" value="1" />
 	<param name="param2" value="2" />
+
 	<!--param name="table_description" command="$(find xacro)/xacro.py $(find gazebo_worlds)/objects/table.urdf.xacro" /-->
 
 	<!--rosparam参数配置-->
