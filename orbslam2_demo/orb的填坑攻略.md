@@ -2,7 +2,7 @@
 ### 问题1 OpenCV 3.2的安装编译问题
 * 首先是安装依赖的关系，有一个文件经常出错，就是：`ippicv_linux_20151201.tgz`下载不下来，导致出错。
 
-**解决办法：**将事先下载好的`ippicv_linux_20151201.tgz`复制到`/home/你的路径名字/opencv-3.2.0/3rdparty/ippicv/downloads/linux-808b791a6eac9ed78d32a7666804320e/`下，（如果里面有文件则删除替换，如果没有直接粘贴即可）。
+**解决办法：** 将事先下载好的`ippicv_linux_20151201.tgz`复制到`/home/你的路径名字/opencv-3.2.0/3rdparty/ippicv/downloads/linux-808b791a6eac9ed78d32a7666804320e/`下，（如果里面有文件则删除替换，如果没有直接粘贴即可）。
 
 * 原来的教程缺少了很重要的一步（我的锅，应该是大意没写进去） 
 
