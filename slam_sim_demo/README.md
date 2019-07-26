@@ -64,10 +64,10 @@ $ roslaunch slam_sim_demo view_slam.launch
 
 
 ### 注意事项
-如果gazebo出现错误，比如无法查看摄像头换面，你需要升级gazebo到gazebo7及以上版本:
+如果gazebo出现错误，比如无法查看摄像头换面，你需要升级gazebo到gazebo9及以上版本:
 ```sh
 $ sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
 $ wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
 $ sudo apt-get update
-$ sudo apt-get install gazebo7
+$ sudo apt-get install gazebo9
 ```

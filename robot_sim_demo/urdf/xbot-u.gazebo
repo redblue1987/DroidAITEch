@@ -44,11 +44,11 @@
 
 
   <!-- camera -->
-    <gazebo reference="camera_link">  
+    <gazebo reference="camera_link">
       		<sensor type="depth" name="camera_D415">
     			  <updateRate>30.0</updateRate>
           		  <camera name="head">
-	  
+
 					  <image>
 					  <width>1280</width>
 					  <height>720</height>
@@ -100,7 +100,7 @@
     <mu>0</mu>
     <mu2>0</mu2>
     <kp>100000000.0</kp>
-    <kd>10000.0</kd>   
+    <kd>10000.0</kd>
   </gazebo>
 
   <gazebo reference="laser">
@@ -110,14 +110,14 @@
     <mu>10</mu>
     <mu2>10</mu2>
     <kp>100000000.0</kp>
-    <kd>10000.0</kd>    
+    <kd>10000.0</kd>
   </gazebo>
 
   <gazebo reference="left_wheel">
     <mu>10</mu>
     <mu2>10</mu2>
     <kp>100000000.0</kp>
-    <kd>10000.0</kd>   
+    <kd>10000.0</kd>
   </gazebo>
 
   <gazebo reference="yaw_platform">

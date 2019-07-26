@@ -10,14 +10,15 @@ project(action_demo)
 find_package(catkin REQUIRED COMPONENTS
   actionlib
   actionlib_msgs
-  genmsg
+  geometry_msgs
   message_generation
   roscpp
   rospy
+  std_msgs
 )
 
 ## System dependencies are found with CMake's conventions
-find_package(Boost REQUIRED COMPONENTS system)
+# find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -35,10 +36,10 @@ find_package(Boost REQUIRED COMPONENTS system)
 ##   your messages/services/actions (e.g. std_msgs, actionlib_msgs, ...).
 ## * In the file package.xml:
 ##   * add a build_depend tag for "message_generation"
-##   * add a build_depend and a run_depend tag for each package in MSG_DEP_SET
+##   * add a build_depend and a exec_depend tag for each package in MSG_DEP_SET
 ##   * If MSG_DEP_SET isn't empty the following dependency has been pulled in
 ##     but can be declared for certainty nonetheless:
-##     * add a run_depend tag for "message_runtime"
+##     * add a exec_depend tag for "message_runtime"
 ## * In this file (CMakeLists.txt):
 ##   * add "message_generation" and every package in MSG_DEP_SET to
 ##     find_package(catkin REQUIRED COMPONENTS ...)
@@ -48,6 +49,18 @@ find_package(Boost REQUIRED COMPONENTS system)
 ##     and list every .msg/.srv/.action file to be processed
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
+add_action_files(
+#   FILES
+#   Action1.action
+#   Action2.action
+    DIRECTORY action
+    FILES Linewalk.action
+)
+
+## Generate added messages and services with any dependencies listed here
+generate_messages(
+   DEPENDENCIES actionlib_msgs   geometry_msgs   std_msgs
+)
 
 ## Generate messages in the 'msg' folder
 # add_message_files(
@@ -64,18 +77,17 @@ find_package(Boost REQUIRED COMPONENTS system)
 # )
 
 ## Generate actions in the 'action' folder
-add_action_files(
-DIRECTORY action FILES DoDishes.action
+# add_action_files(
 #   FILES
 #   Action1.action
 #   Action2.action
-)
+# )
 
 ## Generate added messages and services with any dependencies listed here
- generate_messages(
-   DEPENDENCIES
-   actionlib_msgs
-)
+# generate_messages(
+#   DEPENDENCIES
+#   actionlib_msgs#   geometry_msgs#   std_msgs
+# )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -84,7 +96,7 @@ DIRECTORY action FILES DoDishes.action
 ## To declare and build dynamic reconfigure parameters within this
 ## package, follow these steps:
 ## * In the file package.xml:
-##   * add a build_depend and a run_depend tag for "dynamic_reconfigure"
+##   * add a build_depend and a exec_depend tag for "dynamic_reconfigure"
 ## * In this file (CMakeLists.txt):
 ##   * add "dynamic_reconfigure" to
 ##     find_package(catkin REQUIRED COMPONENTS ...)
@@ -102,14 +114,14 @@ DIRECTORY action FILES DoDishes.action
 ###################################
 ## The catkin_package macro generates cmake config files for your package
 ## Declare things to be passed to dependent projects
-## INCLUDE_DIRS: uncomment this if you package contains header files
+## INCLUDE_DIRS: uncomment this if your package contains header files
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES actionlib_demo
- CATKIN_DEPENDS actionlib actionlib_msgs genmsg message_generation roscpp rospy std_msgs
+#  LIBRARIES action_test
+  CATKIN_DEPENDS actionlib_msgs
 #  DEPENDS system_lib
 )
 
@@ -120,20 +132,8 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-include
+# include
   ${catkin_INCLUDE_DIRS}
-  ${Boost_INCLUDE_DIRS}
-)
-add_executable(dishes_Server src/dishes_Server.cpp)
-
-target_link_libraries(
-  dishes_Server
-  ${catkin_LIBRARIES}
-)
-
-add_dependencies(
- dishes_Server
-  ${action_demo_EXPORTED_TARGETS}
 )
 
 ## Declare a C++ library
@@ -165,18 +165,6 @@ add_dependencies(
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-
-add_executable(dishes_Client src/dishes_Client.cpp)
-
-target_link_libraries(
-  dishes_Client
-  ${catkin_LIBRARIES}
-)
-
-add_dependencies(
-  dishes_Client
-  ${action_demo_EXPORTED_TARGETS}
-)
 
 #############
 ## Install ##
@@ -218,7 +206,7 @@ add_dependencies(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_actionlib_demo.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_action_demo.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
