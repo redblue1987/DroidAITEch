@@ -43,3 +43,4 @@ rtabmap -databaseViewer ~/.ros/rtabmap.db
 终端2:$ roslaunch rtabmap_demo scan_mapping.launch #启动rtabmap
 终端3:$ rosrun robot_sim_demo robot_keyboard_teleop.py #启动键盘控制
 ```
+###### ps:运行结束,虽然rviz中没有显示三维点云地图,但是rtabmap还是订阅了相机的话题,所以最终保存的地图会是2D+3D,占用较大内存,所以谨慎保存每次建的图.

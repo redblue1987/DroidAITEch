@@ -57,8 +57,9 @@
 	  <param name="Mem/InitWMWithAllNodes" type="string" value="$(arg localization)"/>
 	  </node>
 <!-- Visualisation RVIZ -->
-  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(find rtabmap_demo)/launch/config/rtabmap_robot_mapping.rviz" output="screen">
-</node>
+  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(find rtabmap_demo)/launch/config/rtabmap_robot_mapping.rviz" output="screen"/>
+  <!--mapsize /start point-->
+
    <!--node pkg="nodelet" type="nodelet" name="points_xyzrgb" args="standalone rtabmap_demo/point_cloud_xyzrgb"-->
     <remap from="rgb/image"       to="/camera/rgb/image_raw"/>
     <remap from="depth/image"     to="/camera/depth/image_raw"/>
