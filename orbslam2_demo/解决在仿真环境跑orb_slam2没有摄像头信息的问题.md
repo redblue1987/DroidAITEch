@@ -12,8 +12,8 @@ gazebo已经发布了D415摄像头的信息，可是orb没有接受到，因为�
 * step1: 在`//home/本机/catkin_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/src`下找到`ros_rgbd.cc`
 * step2:line68和line69用下列代码替换：
 
-    		message_filters::Subscriber<sensor_msgs::Image> rgb_sub(nh, "/camera_D415/rgb/image_raw", 1);
-    		message_filters::Subscriber<sensor_msgs::Image> depth_sub(nh, "camera_D415/depth/image_raw", 1);
+    		message_filters::Subscriber<sensor_msgs::Image> rgb_sub(nh, "/camera/rgb/image_raw", 1);
+    		message_filters::Subscriber<sensor_msgs::Image> depth_sub(nh, "/camera/depth/image_raw", 1);
     		
  * step3:重新编译，回到ORB_SLAM2/下执行：`./build_ros.sh`
  
