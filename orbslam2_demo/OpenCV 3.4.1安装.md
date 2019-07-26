@@ -2,9 +2,9 @@
 安装环境：ubuntu18.04
 第一步 安装依赖
 ```
- $ sudo apt-get install build-essential  //[compiler]
-$ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev //[required] 
-$ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev  //[optional] 
+sudo apt-get install build-essential  //[compiler]
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev //[required] 
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev  //[optional] 
 ```
 安装错误提示：
 ```
@@ -99,7 +99,6 @@ mkdir build
 cd build
 cmake ..
 make
-
 ```
 生成DisplayImage,
 ```
