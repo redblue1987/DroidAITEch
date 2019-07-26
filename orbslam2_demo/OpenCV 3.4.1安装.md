@@ -90,3 +90,26 @@ export PKG_CONFIG_PATH
 source /etc/bash.bashrc
 sudo updatedb
 ```
+第四步 测试 
+利用orbslam2_demo下的test文件测试openCV。
+在终端执行
+   ```
+			$ cd test
+
+   $mkdir build
+
+   $ cd build
+
+			$ cmake ..
+
+			$ make
+    ```
+
+			生成DisplayImage,再执行
+     ```
+     $ cd ..
+
+			   $ ./test zdzn.png
+      
+    ```
+如果显示出zdzn的LOGO，则说明安装成功！
