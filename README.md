@@ -21,7 +21,7 @@
 | **robot_sim_demo** | 机器人仿真程序，大部分示例会用到这个软件包 |
 | **topic_demo** | topic通信，自定义msg，包括C++和python两个版本实现 |
 | **service_demo** | service通信，自定义srv，分别以C++和python两种语言实现 |
-| **action_demo** | action通信，自定义action，C++和python两种语言实现 |
+| **action_demo** | action通信，自定义action，C++语言实现 |
 | **param_demo** | param操作，分别以C++和python两种语言实现 |
 | **msgs_demo** | 演示msg、srv、action文件的格式规范 |
 | **tf_demo** | tf相关API操作演示，tf示例包括C++和python两个版本 |
@@ -30,7 +30,9 @@
 | **urdf_demo** |  创建机器人urdf模型，在RViz中显示  |
 | **navigation_sim_demo** | 导航演示工具包，包括AMCL, Odometry Navigation等演示 |
 | **slam_sim_demo** | 同步定位与建图演示，包括Gmapping, Karto, Hector等SLAM演示 |
-| **robot_orbslam2_demo** | ORB_SLAM2的演示 |
+| **orbslam2_demo** | ORB_SLAM2的演示 |
+| **rtabmap_demo** | rtabmap的演示 |
+| **dependlib** | ubuntu18所依赖的包(melodic不自带) |
 | **ros_academy_for_beginners** | Metapacakge示例，依赖了本仓库所有的pacakge |
 
 
@@ -64,6 +66,8 @@ $ source ~/catkin_ws/devel/setup.bash
 1. 建议在**本地Ubuntu 16.04**下运行仿真程序。目前Gazebo模拟器的**兼容性**是一大问题，在虚拟机或配置较低的电脑上可能无法运行。**如果你的显卡是N卡，建议安装Ubuntu下的显卡驱动**。
 
 2. 运行Gazebo仿真程序`robot_sim_demo`前，请将Gazebo升级到7.x版本以上（**推荐7.9版本**）。
+
+3. 如果本地是**Ubuntu18.04**,那么建议升级gazebo版本到9.10.方法类似下步骤.修改对应版本号为gazebo9.
 
   查看Gazebo版本方法
   ```sh
