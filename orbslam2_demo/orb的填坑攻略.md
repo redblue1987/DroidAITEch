@@ -1,20 +1,6 @@
 # 复现orb_slam2在仿真环境中运行的填坑之旅
-### 问题1 OpenCV 3.2的安装编译问题
-* 首先是安装依赖的关系，有一个文件经常出错，就是：`ippicv_linux_20151201.tgz`下载不下来，导致出错。
 
-**解决办法：** 将事先下载好的`ippicv_linux_20151201.tgz`复制到`/home/你的路径名字/opencv-3.2.0/3rdparty/ippicv/downloads/linux-808b791a6eac9ed78d32a7666804320e/`下，（如果里面有文件则删除替换，如果没有直接粘贴即可）。
-
-* 原来的教程缺少了很重要的一步（我的锅，应该是大意没写进去） 
-
-**解决办法：** 增加步骤`$ cmake ..`
-
-* 原来的教程没有OpenCV安装好的实例运行测试
-
-**解决办法：**补充`/test`测试文件夹，上传至orbslam2_demo 。
-
-**PS:**OpenCV的依赖库有很多，要按照教程要求的安装基本是OK的，具体出了缺少库，对应安装即可。
-
-### 问题2  安装Pangolin的问题
+### 问题1  安装Pangolin的问题
 * 编译过程出现错误 `CMake Error at CMakeModules/FindGLEW.cmake:51 (MESSAGE):18   Could not find GLEW`
 
 **解决办法：** 安装依赖，增加命令`$ sudo apt-get install libglew-dev`安装上GLEW。
@@ -29,7 +15,7 @@ CMake Error at /usr/share/cmake-3.10/Modules/FindPkgConfig.cmake:415 (message):
 
 **解决办法：** 修改编译命令`$ cmake ..   make sudo make install`即可。具体为啥卡原因未知，应该是自己的硬件问题
 
-### 问题3 编译orb_slam2的问题
+### 问题2 编译orb_slam2的问题
 
 ## 编译运行ORB_SLAM2的问题及解决方法
 在执行`./build.sh`时出现

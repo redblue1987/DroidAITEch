@@ -2,9 +2,9 @@
 安装环境：ubuntu18.04
 第一步 安装依赖
 ```
- $ sudo apt-get install build-essential  //[compiler]
-$ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev //[required] 
-$ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev  //[optional] 
+sudo apt-get install build-essential  //[compiler]
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev //[required] 
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev  //[optional] 
 ```
 安装错误提示：
 ```
@@ -90,3 +90,19 @@ export PKG_CONFIG_PATH
 source /etc/bash.bashrc
 sudo updatedb
 ```
+第五步 测试 
+利用orbslam2_demo下的test文件测试openCV。
+在终端执行
+```
+cd test
+mkdir build
+cd build
+cmake ..
+make
+```
+生成DisplayImage,
+```
+cd ..
+./test zdzn.png  
+```
+如果显示出zdzn的LOGO，则说明安装成功！
