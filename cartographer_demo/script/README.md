@@ -6,6 +6,6 @@
 
 ```
 chmod +x Xbot_cartogarpher.sh 
-./chmod +x Xbot_cartogarpher.sh 
+./Xbot_cartogarpher.sh 
 ```
 
