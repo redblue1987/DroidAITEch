@@ -32,6 +32,7 @@
 | **slam_sim_demo** | 同步定位与建图演示，包括Gmapping, Karto, Hector等SLAM演示 |
 | **orbslam2_demo** | ORB_SLAM2的演示 |
 | **rtabmap_demo** | rtabmap的演示 |
+| **cartographer_demo** | cartographer安装演示包|
 | **dependlib** | ubuntu18所依赖的包(melodic不自带) |
 | **ros_academy_for_beginners** | Metapacakge示例，依赖了本仓库所有的pacakge |
 
