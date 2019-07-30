@@ -1,0 +1,9 @@
+<launch>
+
+  <include file="$(find rtabmap_demo)/launch/include/rtabmap_scanmapping.launch.xml"/>
+
+  <!-- Move base -->
+ <include file="$(find navigation_sim_demo)/launch/include/move_base.launch.xml"/>
+
+
+</launch>

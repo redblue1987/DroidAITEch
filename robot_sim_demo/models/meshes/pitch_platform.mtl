@@ -1,0 +1,8 @@
+newmtl Pitch_PlatformSG
+illum 4
+Kd 0.16 0.16 0.16
+Ka 0.30 0.30 0.30
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.16 0.16
+Ns 48.00
