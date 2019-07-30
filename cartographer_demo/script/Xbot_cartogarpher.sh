@@ -14,7 +14,7 @@ sed -i 's@https://ceres-solver.googlesource.com/ceres-solver.git@https://github.
 wstool update -t src
 rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
 catkin_make_isolated --install --use-ninja
-cd ~/catkin_cartographer//src/cartographer_ros/cartographer_ros/launch
+cd ~/catkin_cartographer/src/cartographer_ros/cartographer_ros/launch
 cp demo_revo_lds.launch cartographer_demo.launch
 sed -i 's@remap from="scan" to="horizontal_laser_2d"@remap from="scan" to="scan"@' ~/catkin_cartographer/src/cartographer_ros/cartographer_ros/launch/cartographer_demo.launch
 sed -i 's@tracking_frame = "horizontal_laser_link"@tracking_frame = "base_link"@' ~/catkin_cartographer/src/cartographer_ros/cartographer_ros/configuration_files/revo_lds.lua
@@ -25,11 +25,8 @@ sed -i 's@published_frame = "horizontal_laser_link"@published_frame = "base_link
 #
 ##################
 read -p "自行启动Xobt仿真平台并按y/Y继续" answer
-	if [ $answer = "y" -o $answer = "Y" ] ; then 
+	if [ $answer = "y" -o $answer = "Y" ] ; then
 		cd ~/catkin_cartographer
 		source install_isolated/setup.bash
 		roslaunch cartographer_ros cartographer_demo.launch
 	fi
-
-
-
